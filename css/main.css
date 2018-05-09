@@ -7,6 +7,8 @@ html, body {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    text-align: center;
+    background-color: #003767;
 }
 a:link {
   text-decoration: none;
@@ -22,99 +24,22 @@ a:visited {
   color:inherit;
   border-bottom: none;
 }
-.section{
-
+.desktop{
 	margin-left:auto;
 	margin-right:auto;
 	width: 1440px;
+	height:100%;
+}
+.mobile{
+	margin-left:auto;
+	margin-right:auto;
+	width: 414px;
 	height:100%;
 }
 .bg_image{
 	position: absolute;
 	margin-left:auto;
 	margin-right:auto;
-	/*width:100%;*/
-	/*background-color: #003767;*/
-}
-
-/*////////////  PRIMARY NAV  ////////////*/
-
-.nav_primary_container_1220{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	margin-top: 45px;
-}
-.hero_logo{
-    float: left;
-	text-align: left;
-	width: 22%;
-	padding-left: 8%;
-}
-.primary_nav{
-	float: right;
-	margin-right: 4%;
-	margin-top: 15px;
-}
-.primary_nav ul, li {
-	padding: 0px 0px 0px 24px;
-	display: inline-block;
-}
-.nav_link{
-	font-weight: 400;
-	font-size: 1rem;
-	text-transform: uppercase;
-	color: white;
-}
-.hero_logo:after{
-	content:’’;
-	display: block;
-	clear:both;
-}
-.primary_nav:after{
-	content:’’;
-	display: block;
-	clear:both;
-}
-
-/*////////////  STORIES  ////////////*/
-
-.story_container{
-	height: 100%;
-	width: 94%;
-	padding-left: 6%;
-	display:flex;
-	align-items: stretch;
-	justify-content:center;
-	/*align-items:center;*/
-	margin-right: 4%;
-	margin-top: 10%;
-}
-.story_image{
-	margin: 0px 0px 0px 18px;
-}
-
-/*////////////  ABOVE THE FOLD  ////////////*/
-
-.hero{
-	z-index: 1;
-	margin-left:auto;
-	margin-right:auto;
-	width:100%;
-	height: 100%;
-	background: linear-gradient(180deg, #003767 70%, #00284B 100%);
-	display:flex;
-	justify-content:flex-end;
-	align-items:flex-end;
-}
-
-
-/*////////////  BELOW THE FOLD  ////////////*/
-
-.hero2{
-	z-index: 1;
-	height: 100%;
-	background-color:  #003767;
 }
 
 /*////////////  CTA  ////////////*/
@@ -162,6 +87,34 @@ a:visited {
 	padding-bottom: 11px;
 	width: 66px;
 }
+.bottom_menu{
+	width:100%;
+	height:66px;
+	position: fixed;
+	z-index: 2;
+	background-color: #79BDE8;
+	bottom: 0;
+	left: 0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.bottom_menu_icons{
+	height: 66px;
+}
+.icon_mobile{
+	fill: black;
+	padding-top: auto;
+	padding-bottom: auto;
+	float: left;
+	width: 60px;
+}
+.icon_mobile:hover{
+/*	fill: #79BDE8;
+	background-color: #003767;
+	padding-top: auto;
+	padding-bottom: auto;*/
+}
 
 
 /*////////////  HAMBURGER MENU  ////////////*/
@@ -178,12 +131,30 @@ a:visited {
 	top: 35px;
 	z-index: 3;
 }
+.hamburger_menu_mobile{
+	fill: black;
+	padding: 30px;
+	background-color: #79BDE8;
+	position: fixed;
+	right:0px;
+	top: 21px;
+	z-index: 3;
+}
 
 
-
-
-
-
-/*<div style="display:flex;justify-content:center;align-items:center;width:100%;height:100%;">
-  <div style="width:1200px;"></div>
-</div>*/
+@media screen and (min-width: 520px) {
+	.desktop{
+		display: inline-block;
+	}
+	.mobile{
+		display: none;
+	}
+}
+@media screen and (max-width: 520px) {
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: inline-block;
+	}
+}
