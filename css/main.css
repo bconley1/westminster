@@ -17,6 +17,11 @@ a:hover {
   color:inherit;
   border-bottom: none;
 }
+a:hvisited {
+  text-decoration: none;
+  color:inherit;
+  border-bottom: none;
+}
 .section{
 	position: absolute;
 	margin: auto;
