@@ -30,6 +30,12 @@ a:visited {
 	width: 1440px;
 	height:100%;
 }
+.tablet{
+	margin-left:auto;
+	margin-right:auto;
+	width: 820px;
+	height:100%;
+}
 .mobile{
 	margin-left:auto;
 	margin-right:auto;
@@ -119,39 +125,69 @@ a:visited {
 
 /*////////////  HAMBURGER MENU  ////////////*/
 
-
-.hamburger_menu{
+.hamburger_menu a{
 	fill: black;
-	padding: 30px;
-	background-color: #79BDE8;
 	display: none;
 	position: fixed;
-	/*position: absolute;*/
 	right:35px;
 	top: 35px;
 	z-index: 3;
-}
-.hamburger_menu_mobile{
-	fill: black;
-	padding: 30px;
 	background-color: #79BDE8;
+	border: 4px solid #79BDE8;
+	transition: .35s all ease;
+}
+.hamburger_menu a:hover{
+	fill: #79BDE8;
+	background-color: #003767;
+	border: 4px solid #79BDE8;
+}
+.hamburger_menu_mobile a{
+	fill: black;
 	position: fixed;
 	right:0px;
 	top: 21px;
 	z-index: 3;
+	background-color: #79BDE8;
+	border: 4px solid #79BDE8;
+	transition: .35s all ease;
+}
+.hamburger_menu_mobile a:hover{
+	fill: #79BDE8;
+	background-color: #003767;
+	border: 4px solid #79BDE8;
+}
+.btn_padding{
+	padding: 26px;
 }
 
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 900px) {
 	.desktop{
+		display: inline-block;
+	}
+	.tablet{
+		display: none;
+	}
+	.mobile{
+		display: none;
+	}
+}
+@media screen and (max-width: 900px) {
+	.desktop{
+		display: none;
+	}
+	.tablet{
 		display: inline-block;
 	}
 	.mobile{
 		display: none;
 	}
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
 	.desktop{
+		display: none;
+	}
+	.tablet{
 		display: none;
 	}
 	.mobile{
