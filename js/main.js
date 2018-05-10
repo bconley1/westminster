@@ -3,8 +3,8 @@
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 800) {
-    $('.hamburger_menu').fadeIn();
+    $('.hamburger_menu a').fadeIn();
   } else {
-    $('.hamburger_menu').fadeOut();
+    $('.hamburger_menu a').fadeOut();
   }
 });
