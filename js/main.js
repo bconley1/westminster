@@ -6,6 +6,7 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 800) {
     $('.hamburger_menu a').fadeIn();
+    console.log("function passing");
   } else {
     $('.hamburger_menu a').fadeOut();
   }
