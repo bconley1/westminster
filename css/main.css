@@ -3,12 +3,11 @@ html, body {
 	font-size: 16px;
     margin: 0px;
     padding: 0px;
- 	background-color:  white;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
     text-align: center;
-    background-color: #003767;
+    background-color:  #003767;
 }
 a:link {
   text-decoration: none;
@@ -52,13 +51,13 @@ a:visited {
 
 .cta_container{
 	position: fixed;
-	right:35px;
+	right:20px;
 	bottom: 12px;
-	z-index: 3;
+	z-index: 1;
 }
 .cta{
 	background-color: #79BDE8;
-	padding: 12px 18px 12px 19px;
+	padding: 14px 18px 14px 19px;
 	color: black;
 	margin-right: 1px;
 	margin-left: 1px;
@@ -71,7 +70,7 @@ a:visited {
 	width:66px;
 	height:100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	background-color: #79BDE8;
 	text-align: center;
 }
@@ -82,13 +81,6 @@ a:visited {
 }
 .icon{
 	fill: black;
-	padding-top: 11px;
-	padding-bottom: 11px;
-	width: 66px;
-}
-.icon:hover{
-	fill: #79BDE8;
-	background-color: #003767;
 	padding-top: 11px;
 	padding-bottom: 11px;
 	width: 66px;
@@ -115,34 +107,51 @@ a:visited {
 	float: left;
 	width: 60px;
 }
-.icon_mobile:hover{
-/*	fill: #79BDE8;
-	background-color: #003767;
-	padding-top: auto;
-	padding-bottom: auto;*/
+.sidedrawer_news {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
-
+.sidedrawer_map {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
 
 /*////////////  HAMBURGER MENU  ////////////*/
 
 .hamburger_menu a{
-	fill: black;
 	display: none;
 	position: fixed;
-	right:35px;
+	right:20px;
 	top: 35px;
 	z-index: 3;
 	background-color: #79BDE8;
 	border: 4px solid #79BDE8;
 	transition: .35s all ease;
 }
-.hamburger_menu a:hover{
-	fill: #79BDE8;
-	background-color: #003767;
+.hamburger_menu_tablet a{
+	position: fixed;
+	right:20px;
+	top: 21px;
+	z-index: 3;
+	background-color: #79BDE8;
 	border: 4px solid #79BDE8;
+	transition: .35s all ease;
 }
 .hamburger_menu_mobile a{
-	fill: black;
 	position: fixed;
 	right:0px;
 	top: 21px;
@@ -151,14 +160,37 @@ a:visited {
 	border: 4px solid #79BDE8;
 	transition: .35s all ease;
 }
-.hamburger_menu_mobile a:hover{
-	fill: #79BDE8;
-	background-color: #003767;
-	border: 4px solid #79BDE8;
-}
 .btn_padding{
-	padding: 26px;
+	padding: 20px 23px;
 }
+.hamburger_menu_bar{
+	width: 26px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+.animation_timing{
+	transition:all 0.35s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transform-origin: 6% 46%;
+}
+.mobilenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+/*.mobile-nav-items {
+  list-style: none;
+  font-size: 1rem;
+}*/
 
 
 @media screen and (min-width: 1060px) {
