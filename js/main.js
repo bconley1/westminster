@@ -53,6 +53,7 @@ var SixthBar = document.getElementById('bc_sixth');
 
 function hamburger_animation_tablet (){
 	event.preventDefault();
+	console.log("function passing");
 
 	if(menuOn){
 		FourthBar.style.transform = 'rotate(0deg)';
@@ -82,6 +83,7 @@ var NinthBar = document.getElementById('bc_ninth');
 
 function hamburger_animation_mobile (){
 	event.preventDefault();
+	console.log("function passing");
 
 	if(menuOn){
 		SeventhBar.style.transform = 'rotate(0deg)';
@@ -117,6 +119,7 @@ var sideDrawerOn = false;
 
 function map_drawer_animation (){
 	event.preventDefault();
+	console.log("function passing");
 
 	if(sideDrawerOn){
 		MapIcon.style.fill = 'black';
@@ -155,6 +158,7 @@ var NewsIconTablet = document.getElementById('sidemenu_news_tablet');
 
 function news_drawer_animation (){
 	event.preventDefault();
+	console.log("function passing");
 
 	if(sideDrawerOn){
 		NewsIcon.style.fill = 'black';
