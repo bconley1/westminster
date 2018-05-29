@@ -23,6 +23,7 @@ var menuOn = false;
 
 function hamburger_animation (){
 	event.preventDefault();
+	console.log("function passing");
 
 	if(menuOn){
 		FirstBar.style.transform = 'rotate(0deg)';
