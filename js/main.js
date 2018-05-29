@@ -6,7 +6,6 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 800) {
     $('.hamburger_menu a').fadeIn();
-    console.log("function passing");
   } else {
     $('.hamburger_menu a').fadeOut();
   }
@@ -24,7 +23,6 @@ var menuOn = false;
 
 function hamburger_animation (){
 	event.preventDefault();
-	console.log("function passing");
 
 	if(menuOn){
 		FirstBar.style.transform = 'rotate(0deg)';
@@ -54,7 +52,6 @@ var SixthBar = document.getElementById('bc_sixth');
 
 function hamburger_animation_tablet (){
 	event.preventDefault();
-	console.log("function passing");
 
 	if(menuOn){
 		FourthBar.style.transform = 'rotate(0deg)';
@@ -84,7 +81,6 @@ var NinthBar = document.getElementById('bc_ninth');
 
 function hamburger_animation_mobile (){
 	event.preventDefault();
-	console.log("function passing");
 
 	if(menuOn){
 		SeventhBar.style.transform = 'rotate(0deg)';
@@ -100,7 +96,7 @@ function hamburger_animation_mobile (){
 		EighthBar.style.opacity = 0;
 		NinthBar.style.transform = 'rotate(-45deg)';
 
-		document.getElementById("mySidenavMobile").style.width = "440px";
+		document.getElementById("mySidenavMobile").style.width = "400px";
 
 		menuOn = true;
 	}
@@ -120,7 +116,6 @@ var sideDrawerOn = false;
 
 function map_drawer_animation (){
 	event.preventDefault();
-	console.log("function passing");
 
 	if(sideDrawerOn){
 		MapIcon.style.fill = 'black';
@@ -159,7 +154,6 @@ var NewsIconTablet = document.getElementById('sidemenu_news_tablet');
 
 function news_drawer_animation (){
 	event.preventDefault();
-	console.log("function passing");
 
 	if(sideDrawerOn){
 		NewsIcon.style.fill = 'black';
