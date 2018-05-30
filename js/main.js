@@ -96,7 +96,7 @@ function hamburger_animation_mobile (){
 		EighthBar.style.opacity = 0;
 		NinthBar.style.transform = 'rotate(-45deg)';
 
-		document.getElementById("mySidenavMobile").style.width = "400px";
+		document.getElementById("mySidenavMobile").style.width = "100%";
 
 		menuOn = true;
 	}
