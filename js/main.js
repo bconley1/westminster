@@ -142,7 +142,7 @@ function map_drawer_animation (){
 
 		document.getElementById("sidedrawerMap").style.width = "726px";
 		document.getElementById("sidedrawerMapTablet").style.width = "726px";
-		document.getElementById("sidedrawerMapMobile").style.width = "400px";
+		document.getElementById("sidedrawerMapMobile").style.width = "100%";
 
 
 		sideDrawerOn = true;
@@ -188,7 +188,7 @@ function news_drawer_animation (){
 
 		document.getElementById("sidedrawerNews").style.width = "458px";
 		document.getElementById("sidedrawerNewsTablet").style.width = "458px";
-		document.getElementById("sidedrawerNewsMobile").style.width = "400px";
+		document.getElementById("sidedrawerNewsMobile").style.width = "100%";
 
 		sideDrawerOn = true;
 	}
